@@ -1,7 +1,7 @@
 {
     "name": "Microsoft-365-Admin",
 	"description": "Deploy Microsoft-365-Admin on Heroku.",
-	"repository": "https://github.com/FuaerCN/MS365Admin-Java-Heroku",
+	"repository": "https://github.com/nxzu/tsds",
 	"website": "https://yam.ink",
 	"keywords": ["Microsoft-365-Admin"],
 	"stack": "container"
