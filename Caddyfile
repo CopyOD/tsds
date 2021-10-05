@@ -1,4 +1,9 @@
-0.0.0.0:$PORT {
+{
+    debug
+    order filter after encode
+}
+
+:{$PORT} {
 	reverse_proxy {
 		to https://shirelandtechnologyprimary.org.uk
 		header_up -Accept-Encoding
