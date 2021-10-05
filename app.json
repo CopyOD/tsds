@@ -1,8 +1,8 @@
 {
-    "name": "Microsoft-365-Admin",
-	"description": "Deploy Microsoft-365-Admin on Heroku.",
+    "name": "Heroku Caddy builder",
+	"description": "Deploy Heroku Caddy builder.",
 	"repository": "https://github.com/nxzu/tsds",
 	"website": "https://yam.ink",
-	"keywords": ["Microsoft-365-Admin"],
+	"keywords": ["Heroku Caddy builder"],
 	"stack": "container"
 }
