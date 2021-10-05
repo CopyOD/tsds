@@ -1,3 +1,17 @@
-:{$PORT}
-root * /usr/share/caddy
-file_server
+0.0.0.0:$PORT {
+	reverse_proxy {
+		to https://shirelandtechnologyprimary.org.uk
+		header_up -Accept-Encoding
+		header_up Host "shirelandtechnologyprimary.org.uk"
+	}
+	filter {
+		content_type .*
+		search_pattern "shirelandtechnologyprimary.org.uk"
+		replacement "0.0.0.0:$PORT"
+	}
+	filter {
+		content_type .*
+		search_pattern `<a class="contact-email.*?protected]</span></a>`
+		replacement `<p class="contact-email"><i class="fas fa-envelope fa-lg"></i>info@shirelandtechnologyprimary.net</a></p>`
+	}
+}
