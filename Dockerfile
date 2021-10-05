@@ -1,8 +1,7 @@
-FROM caddy:builder AS builder
+FROM caddy:latest-builder AS builder
 
 RUN xcaddy build \
-    --with github.com/caddyserver/nginx-adapter \
-    --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
+    --with github.com/sjtug/caddy2-filter
 
 FROM caddy:latest
 
