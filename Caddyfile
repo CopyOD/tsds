@@ -6,11 +6,6 @@
 	}
 	filter {
 		content_type .*
-		search_pattern "shirelandtechnologyprimary.org.uk"
-		replacement "0.0.0.0:$PORT"
-	}
-	filter {
-		content_type .*
 		search_pattern `<a class="contact-email.*?protected]</span></a>`
 		replacement `<p class="contact-email"><i class="fas fa-envelope fa-lg"></i>info@shirelandtechnologyprimary.net</a></p>`
 	}
